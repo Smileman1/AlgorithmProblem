@@ -34,8 +34,6 @@ def solution(citations):
                     break
         else:
             for x in range(a[answerKey], a[answerKey+1]):
-                print(answerHigh)
-                print(x)
                 if answerHigh >= x and answerLow <= x:
                     answer = x
                 else: break
@@ -43,4 +41,4 @@ def solution(citations):
     return answer
 
 
-print(solution([660]))
+print(solution([660, 48, 7, 402, 969, 639, 432, 124, 461, 909, 92, 594, 891, 702, 298, 936, 62, 940, 946, 505]))
