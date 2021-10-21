@@ -5,8 +5,10 @@ sum = 0
 posobel = False
 for x in range(con):
     sum += x
-print(sum)
+
 for x in range(con, con + (taget // con)):
+    if taget < sum :
+        break
     if (taget - sum) % x == 0:
         for y in range(x):
             print((taget - sum) // x + y, end=" ")
@@ -15,3 +17,4 @@ for x in range(con, con + (taget // con)):
     else: sum += x
 if not posobel:
     print(-1)
+    
